@@ -12895,7 +12895,7 @@ textarea.form-input {
 }
 
 .post-classic-image {
-	/* max-height: 300px; */
+	max-height: 346px;
 }
 
 .post-classic:hover::before {
