@@ -1991,6 +1991,42 @@
 				});
 			}
 		}
+		function isElementInViewport(el) {
+            const rect = el.getBoundingClientRect();
+            return (
+                rect.top >= 0 &&
+                rect.left >= 0 &&
+                rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+                rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+            );
+        }
 
+        function fade(el, position = 'f-up') {
+          if (isElementInViewport(el)) {
+            let object = {
+              'f-up'    : 'fadeInUp',
+              'f-left'  : 'fadeInLeft',
+              'f-right' : 'fadeInRight'
+            }
+            console.log('fade');
+            $(el).removeClass(position);
+            $(el).addClass(`animated ${object[position]}`);
+          }
+        }
+
+        window.addEventListener('scroll', function() {
+          const elements = document.querySelectorAll('img');
+          elements.forEach(el => {
+              if (isElementInViewport(el)) {
+                if ($(el).hasClass('f-up')) {
+                  fade(el, 'f-up');
+                } else if ($(el).hasClass('f-left')) {
+                  fade(el, 'f-left');
+                } else if ($(el).hasClass('f-right')) {
+                  fade(el, 'f-right');
+                }
+              }
+          });
+        });
 	});
 }());
