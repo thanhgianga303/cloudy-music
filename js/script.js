@@ -713,6 +713,15 @@
 		}
 
 		/**
+		 * @desc Update the current slider text value
+		 */
+		function updateSwiperHeight(swiperElement) {
+			const windowWidth = window.innerWidth;
+			const newMinHeight = windowWidth * 0.5;
+			swiperElement.css('min-height', `${newMinHeight}px`);
+		}
+
+		/**
 		 * @desc Google map function for getting latitude and longitude
 		 */
 		function getLatLngObject(str, marker, map, callback) {
@@ -1152,6 +1161,10 @@
 					swiperSlide = s.find(".swiper-slide"),
 					autoplay = false;
 
+				updateSwiperHeight(s);
+				window.addEventListener('resize', function () {
+					updateSwiperHeight(s);
+				});
 				for (var j = 0; j < swiperSlide.length; j++) {
 					var $this = $(swiperSlide[j]),
 						url;
