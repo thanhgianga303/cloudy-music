@@ -1037,7 +1037,7 @@ p.rights a:hover {
 /** @group Plugins */
 /** @section Animate */
 .animated {
-	animation-duration: 1s;
+	animation-duration: 0.8s;
 	animation-fill-mode: both;
 	opacity: 1;
 }
@@ -1080,6 +1080,10 @@ html:not(.lt-ie10) .not-animated {
 
 .fadeInUp {
 	animation-name: fadeInUp;
+}
+
+.f-up, .f-left, .f-right {
+	visibility: hidden;
 }
 
 @keyframes fadeInDown {
