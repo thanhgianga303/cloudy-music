@@ -10565,6 +10565,7 @@ a.link-social:hover::after {
 	top: 50%;
 	left: 5px;
 	transform: translate(0, -50%);
+	color: #c42a6c;
 }
 
 @media (min-width: 992px) {
@@ -10575,6 +10576,7 @@ a.link-social:hover::after {
 
 .box-about-post-title {
 	margin-top: 20px;
+	color:#c42a6c
 }
 
 @media (min-width: 768px) {
@@ -10594,7 +10596,7 @@ a.link-social:hover::after {
 	display: inline-block;
 	position: relative;
 	top: -5px;
-	background-color: #4ac4cf;
+	background-color: #c42a6c;
 	height: 4px;
 	width: 45px;
 	margin-right: 15px;
@@ -10781,7 +10783,7 @@ a.link-social:hover::after {
 		width: 12px;
 		height: 12px;
 		border-radius: 10em;
-		background-color: #4ac4cf;
+		background-color: #c42a6c;
 		left: -6px;
 		bottom: 0;
 		z-index: 1;
@@ -10790,7 +10792,7 @@ a.link-social:hover::after {
 
 .box-bio-year {
 	margin-top: 3px;
-	color: #4ac4cf;
+	color: #c42a6c;
 	font-family: "Source Code Pro", Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 	font-weight: 500;
 	position: relative;
@@ -10805,7 +10807,7 @@ a.link-social:hover::after {
 		right: -4px;
 		bottom: -6px;
 		height: 1px;
-		background-color: rgba(255, 255, 255, 0.25);
+		background-color: #c42a6c;
 	}
 	.box-bio-year::after {
 		content: '';
@@ -10815,7 +10817,7 @@ a.link-social:hover::after {
 		top: calc(100% + 6px);
 		height: 300px;
 		width: 1px;
-		background-color: rgba(255, 255, 255, 0.25);
+		background-color: #c42a6c;
 	}
 }
 
@@ -10832,11 +10834,12 @@ a.link-social:hover::after {
 .box-bio-title {
 	letter-spacing: .1em;
 	font-weight: 700;
+	color:#c42a6c
 }
 
 .box-bio-text {
 	margin-top: 13px;
-	color: #4c5a86;
+	color: #c42a6c;
 	letter-spacing: .1em;
 }
 
@@ -13853,7 +13856,7 @@ img + .custom-title {
 
 @media (min-width: 1200px) {
 	.breadcrumbs-custom {
-		padding-top: 224px;
+		padding-top: 600px;
 	}
 	* + .breadcrumbs-custom-path {
 		margin-top: 142px;
