@@ -13856,7 +13856,7 @@ img + .custom-title {
 
 @media (min-width: 1200px) {
 	.breadcrumbs-custom {
-		padding-top: 600px;
+		padding-top: 700px;
 	}
 	* + .breadcrumbs-custom-path {
 		margin-top: 142px;
