@@ -13751,7 +13751,7 @@ img + .custom-title {
 /** @section Breadcrumbs */
 .breadcrumbs-custom {
 	position: relative;
-	padding-top: 60px;
+	padding-top: 120px;
 	text-align: center;
 	background-color: #9b9b9b;
 	background-position: center;
